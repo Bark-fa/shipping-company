@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We are a shipping company based in Beirut, Lebanon">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 813px)" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <title>About ShippingCompany</title>
+</head>
+
+<body>
+    <nav id="nav" class="p-1">
+        <div id="nav-items">
+
+            <header>
+                <a href="index.html">
+                    <p><i class="fas fa-box-open"></i> ShippingCompany</p>
+                </a>
+            </header>
+
+            <div id="items">
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#team">Our Team</a></li>
+                    <li><a href="index.html#fleet">Our Fleet</a></li>
+                    <li><a href="#" class="active">About Us</a></li>
+                    <li><a href="index.html#contact" class="btn btn-dark">Get an estimate</a></li>
+                </ul>
+                <div id="menu">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu-items" class="p-1">
+
+            <div class="container">
+
+                <ul>
+                    <li><a href="index.html#services" class="menu-link">Services</a></li>
+                    <li><a href="index.html#team" class="menu-link">Our Team</a></li>
+                    <li><a href="index.html#fleet" class="menu-link">Our Fleet</a></li>
+                    <li><a href="#" class="menu-link">About Us</a></li>
+                    <li><a href="index.html#contact" class="btn btn-dark menu-link">Get an estimate</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <div id="overflow-wrapper">
+        <main id="aboutus-showcase" class="p-2" data-aos="zoom-in">
+            <div id="aboutus-content">
+                <h1>Creating Waves in the <br>Logistics Industry</h1>
+            </div>
+        </main>
+
+        <section id="brief-section" class="about-brief">
+            <div id="text" class="p-2" data-aos="fade-up">
+                <h2>Worldwide Logistics, Air<br> Freight Forwarding, Road<br> Haulage.</h2>
+                <p>ShippingCompany was founded back in 2010 by John Doe <br><br>Today ShippingCompany is a leading third-party contract logistics company<br> based in Beirut, Lebanon. We specialize in providing <br> supply-chain warehousing and transport services<br> throughout Lebanon, the middle east and Africa.</p>
+                <a href="index.html#services" class="btn btn-primary">See Our Services</a>
+                <a href="index.html#contact" class="btn btn-dark">Get an estimate</a>
+            </div>
+
+            <div class="image-container" data-aos="fade-down">
+                <picture>
+                    <source srcset="img/port.webp" type="image/webp">
+                    <img src="img/port.jpg" alt="Airplane">
+                </picture>
+            </div>
+        </section>
+        <footer class="p-2">
+            <h3><i class="fas fa-box-open"></i> ShippingCompany</h3>
+            <span>Copyright &copy; 2020 ShippingCompany LLC All Rights Rreserved</span>
+            <div id="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><i id="facebook-icon" class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </footer>
+        <script src="js/animation.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            });
+
+            var menuLinks = document.getElementsByClassName("menu-link");
+            const menu = document.getElementById('menu');
+            const menuItems = document.getElementById('mobile-menu-items');
+
+
+            menu.onclick = function() {
+
+                menuItems.classList.toggle('menu-items-display')
+
+            }
+
+
+            // Close the mobile menu after an item is clicked
+            for (let i = 0; i < menuLinks.length; i++) {
+                menuLinks[i].onclick = function() {
+                    document.getElementById("mobile-menu-items").classList.toggle('menu-items-display')
+                }
+            }
+        </script>
+    </div>
+</body></html>
