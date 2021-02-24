@@ -15,7 +15,7 @@
 
 <body>
 
-    <nav id="nav" class="p-1">
+    <nav id="nav" class="p-1 bg-main">
         <div id="nav-items">
 
             <header>
@@ -55,15 +55,18 @@
             </div>
 
         </div>
-
     </nav>
-    <div id="overflow-wrapper">
-        <main id="showcase-section">
 
-            <div id="showcase" data-aos="zoom-in">
+    <div id="overflow-wrapper">
+
+        <main id="showcase-section">
+            <div id="showcase" data-aos="zoom-in" class="z-1 pos-rl">
                 <div id="showcase-content">
                     <h1>We are a major shipping company based in Lebanon</h1>
-                    <p>Welcome to ShippingCompany LLC. <br> We take care of all your shipping needs, no matter the size<br> of your business, whether you're a small business, medium-sized company, or a<br> fortune 500 company we can manage your shipments, supply chains,<br> and take care of customs clearance for you, contact us to get an estimate now!</p>
+                    <p>Welcome to ShippingCompany LLC. <br> We take care of all your shipping needs, no matter the
+                        size<br> of your business, whether you're a small business, medium-sized company, or a<br>
+                        fortune 500 company we can manage your shipments, supply chains,<br> and take care of customs
+                        clearance for you, contact us to get an estimate now!</p>
                     <a href="#contact" class="btn btn-primary">Get an estimate</a>
                     <a href="about.html" class="btn btn-outline">More About Us</a>
                 </div>
@@ -73,7 +76,9 @@
         <section id="brief-section">
             <div id="text" class="p-2" data-aos="fade-right">
                 <h2>Worldwide Logistics, Air<br> Freight Forwarding, Road<br> Haulage.</h2>
-                <p>ShippingCompany is a leading third-party contract logistics company<br> based in Beirut, Lebanon. We specialize in providing <br> supply-chain warehousing and transport services<br> throughout Lebanon, the middle east and Africa.</p>
+                <p>ShippingCompany is a leading third-party contract logistics company<br> based in Beirut, Lebanon. We
+                    specialize in providing <br> supply-chain warehousing and transport services<br> throughout Lebanon,
+                    the middle east and Africa.</p>
                 <a href="#services" class="btn btn-primary">See Our Services</a>
                 <a href="#contact" class="btn btn-dark">Get an estimate</a>
             </div>
@@ -86,7 +91,7 @@
             </div>
         </section>
 
-        <section id="services">
+        <section id="services" class="bg-dark p-5">
             <div class="grid">
                 <div class="card" data-aos="flip-left">
                     <i class="fas fa-dolly-flatbed fa-4x"></i>
@@ -97,19 +102,22 @@
                 <div class="card" data-aos="flip-right">
                     <i class="fas fa-share-square fa-4x"></i>
                     <h3>Courier Service</h3>
-                    <p>Buy your items from the Amazon, eBay, Walmart etc... send them to our address, and we bring them to Lebanon</p>
+                    <p>Buy your items from the Amazon, eBay, Walmart etc... send them to our address, and we bring them
+                        to Lebanon</p>
                 </div>
 
                 <div class="card" data-aos="flip-right">
                     <i class="fas fa-shipping-fast fa-4x"></i>
                     <h3>Supply Chain</h3>
-                    <p>We can take care of your entire supply chain process, no matter if you're a small business or a big company</p>
+                    <p>We can take care of your entire supply chain process, no matter if you're a small business or a
+                        big company</p>
                 </div>
 
                 <div class="card" data-aos="flip-left">
                     <i class="fas fa-balance-scale fa-4x"></i>
                     <h3>Customs Clearance</h3>
-                    <p>We take care of customs clearance so that you don't have to, we also warn you about fees upfront</p>
+                    <p>We take care of customs clearance so that you don't have to, we also warn you about fees upfront
+                    </p>
                 </div>
             </div>
 
@@ -121,7 +129,7 @@
 
         <section id="team">
             <div id="team-content" data-aos="zoom-in">
-                <h3>Meet <span>Our Team</span></h3>
+                <h3>Meet <span class="text-main">Our Team</span></h3>
                 <ul>
                     <li>Mark Smith: CEO</li>
                     <li>Shannon Johnson: CFO</li>
@@ -138,7 +146,8 @@
             </div>
         </section>
 
-        <section id="fleet" class="p-3" data-aos="flip-up" data-aos-duration="1000" data-aos-id="fleet-animation">
+        <section id="fleet" class="p-3 bg-dark" data-aos="flip-up" data-aos-duration="1000"
+            data-aos-id="fleet-animation">
             <div id="fleet-grid">
 
                 <div class="fleet-item">
@@ -182,7 +191,8 @@
 
                         <input id="phone" name="phone" type="text" required placeholder="Phone number">
                         <input id="subject" name="subject" type="text" required placeholder="Subject">
-                        <textarea required name="message" id="contact-message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea required name="message" id="contact-message" cols="30" rows="10"
+                            placeholder="Message"></textarea>
 
                     </div>
                     <button id="form-button" type="submit" class="btn btn-primary">Send Message</button>
@@ -191,13 +201,15 @@
             </div>
 
         </section>
-        <footer class="p-2">
+
+        <footer class="p-2 bg-main">
             <a href="#">
                 <h3><i class="fas fa-box-open"></i> ShippingCompany</h3>
             </a>
             <span>Copyright &copy; 2020 ShippingCompany LLC All Rights Rreserved</span>
             <div id="social-media">
-                <a href="https://www.facebook.com/" target="_blank"><i id="facebook-icon" class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i id="facebook-icon"
+                        class="fab fa-facebook-f fa-2x"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                 <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
@@ -228,7 +240,7 @@
 
 
             // Toggle the mobile Menu
-            menu.onclick = function() {
+            menu.onclick = function () {
 
                 menuItems.classList.toggle('menu-items-display')
 
@@ -237,14 +249,14 @@
 
             // Close the mobile menu after an item is clicked
             for (let i = 0; i < menuLinks.length; i++) {
-                menuLinks[i].onclick = function() {
+                menuLinks[i].onclick = function () {
                     document.getElementById("mobile-menu-items").classList.toggle('menu-items-display')
                 }
             }
 
 
-            // Start counting fleet items when section is scrolled on
-            let animateListener = setInterval(function() {
+            // Start counting fleet items when section is scrolled on, for some reason AOI's event listener isn't working
+            let animateListener = setInterval(function () {
                 if (document.getElementById('fleet').classList.contains("aos-animate")) {
                     if (shipsValue != 550) {
                         shipsValue += 2;
@@ -271,4 +283,6 @@
             }, 1)
         </script>
     </div>
-</body></html>
+</body>
+
+</html>
